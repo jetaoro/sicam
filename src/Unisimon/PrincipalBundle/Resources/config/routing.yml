@@ -1,0 +1,57 @@
+PrincipalBundle_homepage:
+    pattern:  /
+    defaults: { _controller: UnisimonPrincipalBundle:Default:index }
+
+encuesta:
+    pattern:  /encuesta/
+    defaults: { _controller: UnisimonPrincipalBundle:Encuesta:index }
+    
+encuesta_show:
+  pattern: /encuesta/detalle/{id}
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:show }
+  
+encuesta_new:
+  pattern: /encuesta/nueva/
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:new }
+  
+encuesta_edit:
+  pattern: /encuesta/editar/{id}
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:edit }
+  
+encuesta_update:
+  pattern: /encuesta/actualizar/{id}
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:update }
+
+encuesta_delete:
+  pattern: /encuesta/eliminar/{id}
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:delete }
+
+encuesta_create:
+  pattern: /encuesta/crear/
+  defaults: { _controller: UnisimonPrincipalBundle:Encuesta:create }
+    
+  
+usuario_create:
+    pattern:  /usuario/create/
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:create }  
+ 
+usuario:
+    pattern:  /usuario/
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:index }  
+ 
+usuario_show:
+    pattern:  /usuario/{id}
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:show }
+    
+usuario_new:
+    pattern:  /usuario/nuevo/
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:new }
+        
+usuario_edit:
+    pattern:  /usuario/editar/
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:edit}    
+    
+usuario_delete:
+    pattern:  /usuario/delete/
+    defaults: { _controller: UnisimonPrincipalBundle:Usuario:delete}        
+    

@@ -1,0 +1,17 @@
+<h1>Encuestas Creadas por{{usuario}}</h1>
+
+<table border="1">
+    <tr>
+        <th>Titulo</th>
+        <th>Modificado</th>
+        <th>Estado</th>
+    </tr>
+    {% for encuesta in encuestas %}
+    <tr>
+        <td>{{encuesta.titulo}}</td>
+        <td>{{encuesta.modificado}}</td>
+        <td>{{encuesta.estado}}</td>
+    </tr>
+    {% endfor %}
+</table>
+

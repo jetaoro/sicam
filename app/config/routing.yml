@@ -1,0 +1,4 @@
+UnisimonPrincipalBundle:
+    resource: "@UnisimonPrincipalBundle/Resources/config/routing.yml"
+    prefix:   /
+
